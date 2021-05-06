@@ -33,7 +33,25 @@ p {
     display: inline-block;
     text-decoration: none;
     padding: .5em 1.25em;
-    background: blue;
-    color: cornsilk;
+    text-transform: uppercase;
     font-weight: 700;
+    font-size: 1.125em;
+    background: var(--clr-accent, blue);
+    color: var(--clr-accent, #fff);
+    border-radius: .25em;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.primary-title {
+    font-size: 4rem;
+    font-size: clamp(3rem, 5vw + 1rem, 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
 }
